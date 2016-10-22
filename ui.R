@@ -8,7 +8,8 @@ shinyUI(fluidPage(
     h6("Promedio de pérdidas: "),
     h4(strong(textOutput("atacantes_fin"), style = "color: #cc0000")),
     h6("Probabilidad de conseguir el territorio: "),
-    h4(strong(textOutput("prob_territorio"), style = "color: #cc0000"))
+    h4(strong(textOutput("prob_territorio"), style = "color: #cc0000")),
+    p("by jgomezmd: ", a("https://github.com/jgomezmd"), style = "font-size: 10px; text-align: right")
   ),
   mainPanel(
     plotOutput("dist_perdidas"),
